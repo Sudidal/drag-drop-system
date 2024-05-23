@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Demo</title>
+    <script src="/dragHandler.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="group">
+      <img class="custom-draggable image" src="./proccessor.jpg" />
+      <img class="custom-draggable image" src="./intel.png" />
+      <img class="custom-draggable image" src="./restaurant.jpg" />
+      <img class="image" src="./inDraggable.png" />
+    </div>
+
+    <div class="group">
+      <div class="custom-droppable box">Drop Here</div>
+      <div class="custom-droppable box">Drop Here</div>
+      <div class="custom-droppable box">Drop Here</div>
+      <div class="box">I don't have the droppable class</div>
+    </div>
+
+    <style>
+      .group {
+        height: 250px;
+        display: flex;
+      }
+      .image {
+        width: 200px;
+        height: 200px;
+      }
+      .box {
+        width: 200px;
+        aspect-ratio: 1 / 1;
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </body>
+</html>
