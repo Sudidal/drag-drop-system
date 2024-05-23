@@ -11,6 +11,7 @@
       <div class="custom-draggable block one">Drag Me</div>
       <div class="custom-draggable block two">Drag Me</div>
       <div class="custom-draggable block three">Drag Me</div>
+      <div class="custom-draggable coward block">Drag Me</div>
       <div class="undraggable block four">I don't have draggable class</div>
     </div>
 
@@ -23,6 +24,7 @@
 
     <style>
       * {
+        box-sizing: border-box;
         font-family: sans-serif;
         user-select: none;
       }
@@ -44,6 +46,7 @@
         width: 200px;
         aspect-ratio: 1 / 1;
         border: 1px solid black;
+        border-radius: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -61,6 +64,14 @@
       .block.undraggable {
         background-color: rgb(247, 23, 23);
         border-radius: 50%;
+      }
+      .coward {
+        background: linear-gradient(red, blue);
+        border-radius: 12px;
+      }
+      .drag-clone {
+        border: 3px solid black;
+        filter:opacity(70%);
       }
     </style>
   </body>
