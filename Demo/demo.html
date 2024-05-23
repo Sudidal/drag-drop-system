@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag and Drop Demo</title>
-    <script src="/dragHandler.js" type="module" defer></script>
+    <script src="../dragHandler.js" type="module" defer></script>
   </head>
   <body>
     <div class="group">
-      <img class="custom-draggable image" src="./proccessor.jpg" />
-      <img class="custom-draggable image" src="./intel.png" />
-      <img class="custom-draggable image" src="./restaurant.jpg" />
-      <img class="image" src="./inDraggable.png" />
+      <div class="custom-draggable block one">Drag Me</div>
+      <div class="custom-draggable block two">Drag Me</div>
+      <div class="custom-draggable block three">Drag Me</div>
+      <div class="undraggable block four">I don't have draggable class</div>
     </div>
 
     <div class="group">
@@ -22,19 +22,45 @@
     </div>
 
     <style>
+      * {
+        font-family: sans-serif;
+        user-select: none;
+      }
       .group {
         height: 250px;
         display: flex;
+        gap: 5px;
       }
-      .image {
-        width: 200px;
-        height: 200px;
+      .block {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
       }
       .box {
         width: 200px;
         aspect-ratio: 1 / 1;
         border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+      }
+      .block.one {
+        background-color: rgb(26, 112, 224);
+      }
+      .block.two {
+        background-color: rgb(18, 168, 5);
+      }
+      .block.three {
+        background-color: orange;
+      }
+      .block.undraggable {
+        background-color: rgb(247, 23, 23);
+        border-radius: 50%;
       }
     </style>
   </body>

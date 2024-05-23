@@ -10,7 +10,7 @@ document.body.addEventListener("mousemove", (ev) => {
 document.body.addEventListener("mouseup", (ev) => {
   OnMouseUp.trigger(ev);
 });
-document.body.addEventListener("dragstart", (ev) => {
+document.body.addEventListener("mousedown", (ev) => {
   OnMouseDragStart.trigger(ev);
 });
 

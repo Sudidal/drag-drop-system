@@ -10,9 +10,7 @@ const DROPPABLE_CLASS = "custom-droppable";
 OnMouseDragStart.add(handleDrag);
 
 function handleDrag(ev) {
-  console.log("fired");
   if (ev.target.classList.contains(DRAGGABLE_CLASS)) {
-    ev.preventDefault();
     dragElement(ev);
   }
 }
@@ -27,7 +25,6 @@ function dragElement(ev) {
   OnMouseUp.add(onDragEnd);
   OnMouseMove.add(onDrag);
   element.style = "pointer-events: none";
-  element.style.position = "absolute";
   console.log(
     "setting document body height to 100vh, remove it or edit it if you want"
   );
@@ -53,6 +50,7 @@ function dragElement(ev) {
 
     console.log(x);
     console.log(y);
+    element.style.position = "absolute";
     element.style.top = `${y}px`;
     element.style.left = `${x}px`;
   }
