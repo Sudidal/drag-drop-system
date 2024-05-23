@@ -1,6 +1,6 @@
 {
   "name": "drag-drop-system",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dragHandler.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "https://github.com/Sudidal/drag-drop-system.git"
   },
-  "keywords": ["drag", "drop", "custom", "class"],
+  "keywords": [
+    "drag",
+    "drop",
+    "custom",
+    "class"
+  ],
   "author": "mohammed <mohammedhaider15mo@gmail.com>",
   "license": "ISC",
   "bugs": {
