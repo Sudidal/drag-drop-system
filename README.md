@@ -1,7 +1,8 @@
 # Drag & Drop System
 Simple, easy to use drag & drop system
 
-[NPM Package]()
+[NPM Package](https://www.npmjs.com/package/drag-drop-system)
+[GitHub Repo](https://github.com/Sudidal/drag-drop-system)
 
 ### How it works
 this system only relies on 3 scripts:
